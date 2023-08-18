@@ -1,0 +1,38 @@
+@keyframes cambios{
+    0% {
+        background-color: red;
+        width: 100px;
+    }
+    25% {
+        background-color: yellow;
+        width: 50px;
+        transform: translate(0, 100px);
+    }
+    50% {
+        background-color: blue;
+        width: 100px;
+        transform: translate(100px, 100px);
+
+    }
+    75% {
+        background-color: blue;
+        width: 150px;
+        transform: translate(100px, 0);
+
+    }
+    100% {
+        background-color: red;
+        width: 100px;
+        transform: translate(0, 0);
+
+    }
+}
+/* Elemento que recibe la animación */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: cambios;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
